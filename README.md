@@ -42,3 +42,20 @@ Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em seu computado
 Abra o terminal na pasta raiz do projeto e execute o comando:
 ```bash
 npm install
+3. Configuração do Mailtrap (Opcional)
+O projeto já está configurado com as credenciais do Mailtrap fornecidas na atividade.
+Aviso: Caso o limite gratuito de envios dessa conta seja atingido durante os testes (Erro 535 5.7.0), o sistema não irá travar. O e-mail não chegará à caixa de entrada falsa, mas o log de erro será exibido no console do servidor, comprovando o funcionamento da fila.
+
+4. Iniciando o Servidor
+Ainda no terminal, execute:
+
+Bash
+node server.js
+Você verá a mensagem: Servidor rodando em http://localhost:3000
+
+5. Acessando o Sistema
+Abra o navegador e acesse: http://localhost:3000
+
+Para testar o Chat em tempo real, abra uma segunda aba (ou janela anônima), acesse o mesmo endereço, crie uma segunda conta e faça o login. As mensagens aparecerão instantaneamente em ambas as telas.
+
+Para testar a Fila de E-mails, faça um cadastro e observe o terminal do Node.js. Em até 30 segundos, a fila será processada e o log de sucesso será exibido.
