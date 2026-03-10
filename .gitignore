@@ -1,0 +1,5 @@
+# Ignorar a pasta de dependências (muito pesada)
+node_modules/
+
+# Ignorar o arquivo de variáveis de ambiente (onde estão as senhas)
+.env
